@@ -7,7 +7,7 @@ published: true
 ---
 
 ## [blueutil-tui]
-A minimal tui for Mac which utilizes [blueutil] to manage your bluetooth devices.
+A tui for Mac which utilizes [blueutil] to manage your bluetooth devices.
 - search nearby devices
 - pair/unpair devices
 - connect/disconnect devices
@@ -51,7 +51,7 @@ Tool to manage all your .env files at a central place and set environment variab
 [dotenv]: https://github.com/theskumar/python-dotenv
 
 <!-- My repos -->
-[kanban-python]: https:/github.com/Zaloog/kanban-python
-[kanban-tui]: https:/github.com/Zaloog/kanban-tui
-[dotenvhub]: https:/github.com/Zaloog/dotenvhub
-[blueutil-tui]: https:/github.com/Zaloog/blueutil-tui
+[kanban-python]: https://github.com/Zaloog/kanban-python
+[kanban-tui]: https://github.com/Zaloog/kanban-tui
+[dotenvhub]: https://github.com/Zaloog/dotenvhub
+[blueutil-tui]: https://github.com/Zaloog/blueutil-tui
