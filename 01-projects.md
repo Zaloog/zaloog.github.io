@@ -6,6 +6,17 @@ order: 1
 published: true
 ---
 
+## [ayu]
+A tui to use pytest interactively
+- a tui and pytest-plugin in one
+- marking tests and running subsets of your test suite
+- utilizing watchfiles to automatically re-run tests on file changes
+- coverage visualisation and plugin explorer
+
+![image](https://raw.githubusercontent.com/Zaloog/ayu/main/images/main_screen.png)
+
+---
+
 ## [blueutil-tui]
 A tui for Mac which utilizes [blueutil] to manage your bluetooth devices.
 - search nearby devices
@@ -51,6 +62,7 @@ Tool to manage all your .env files at a central place and set environment variab
 [dotenv]: https://github.com/theskumar/python-dotenv
 
 <!-- My repos -->
+[ayu]: https://github.com/Zaloog/ayu
 [kanban-python]: https://github.com/Zaloog/kanban-python
 [kanban-tui]: https://github.com/Zaloog/kanban-tui
 [dotenvhub]: https://github.com/Zaloog/dotenvhub
