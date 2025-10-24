@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Tools
+permalink: /tools/
 order: 1
 published: true
 ---
@@ -62,6 +62,7 @@ Tool to manage all your .env files at a central place and set environment variab
 [dotenv]: https://github.com/theskumar/python-dotenv
 
 <!-- My repos -->
+<!-- Tools -->
 [ayu]: https://github.com/Zaloog/ayu
 [kanban-python]: https://github.com/Zaloog/kanban-python
 [kanban-tui]: https://github.com/Zaloog/kanban-tui
