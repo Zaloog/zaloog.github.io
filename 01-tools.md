@@ -38,12 +38,12 @@ A minimal kanban application for the terminal using rich.
 ---
 
 ## [kanban-tui]
-More feature-rich kanban application using `textual`. Uses a sqlite database as backend
-- sqlite database as backend
+More feature-rich kanban application using `textual`. Uses a sqlite database as the main backend
+- sqlite database as backend, also supporting Claude .json tasks
 - utilizing `plotext` for plotting in the terminal
 - supports multiple boards and individual columns
 
-![image](https://raw.githubusercontent.com/Zaloog/kanban-tui/main/images/demo.gif)
+![image](https://raw.githubusercontent.com/Zaloog/kanban-tui/main/docs/demo.gif)
 
 ---
 
