@@ -147,7 +147,53 @@ code {
   background-color: var(--code-bg);
   border-color: var(--border);
   border-radius: 6px;
-  color: var(--text);
+}
+
+.highlight,
+.highlighter-rouge .highlight {
+  background-color: var(--code-bg);
+}
+
+// Prevent table row striping from leaking into syntax-highlighted code tables
+.highlight table tr {
+  background-color: transparent !important;
+}
+
+// ─── Dark mode syntax highlighting ────────────────────────────────────────────
+
+@mixin dark-highlight {
+  .highlight {
+    .c, .cm, .c1, .cs { color: #64748b; }           // Comments
+    .k, .kc, .kd, .kp, .kr, .ow { color: #93c5fd; font-weight: normal; } // Keywords
+    .kt { color: #67e8f9; }                          // Keyword.Type
+    .s, .s2, .s1, .sb, .sc, .sd,
+    .se, .sh, .si, .sx { color: #86efac; }          // Strings
+    .ss { color: #86efac; }                          // String.Symbol
+    .sr { color: #6ee7b7; }                          // String.Regex
+    .m, .mf, .mh, .mi, .mo, .il { color: #fdba74; } // Numbers
+    .na { color: #93c5fd; }                          // Name.Attribute
+    .nb, .bp { color: #7dd3fc; }                     // Name.Builtin
+    .nc { color: #67e8f9; font-weight: normal; }     // Name.Class
+    .no, .nv, .vc, .vg, .vi { color: #c4b5fd; }     // Name.Constant / Variable
+    .ni { color: #f0abfc; }                          // Name.Entity
+    .ne, .nf { color: #c4b5fd; font-weight: normal; } // Name.Exception / Function
+    .nn { color: #94a3b8; }                          // Name.Namespace
+    .nt { color: #93c5fd; }                          // Name.Tag
+    .o  { color: #e2e8f0; }                          // Operator
+    .err { color: #fca5a5; background-color: transparent; } // Error
+    .gd { color: #fca5a5; background-color: transparent; }  // Generic.Deleted
+    .gi { color: #86efac; background-color: transparent; }  // Generic.Inserted
+    .gh, .gu { color: #94a3b8; }                     // Generic.Heading / Subheading
+    .go { color: #94a3b8; }                          // Generic.Output
+    .gp { color: #64748b; }                          // Generic.Prompt
+    .w  { color: #334155; }                          // Text.Whitespace
+  }
+}
+
+[data-theme="dark"] { @include dark-highlight; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-highlight; }
 }
 
 // ─── Blockquote ───────────────────────────────────────────────────────────────
@@ -191,7 +237,7 @@ blockquote {
 
 // ─── Tables ───────────────────────────────────────────────────────────────────
 
-table {
+table:not(.rouge-table) {
   border-color: var(--border);
   color: var(--text);
 
