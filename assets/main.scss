@@ -1,0 +1,15 @@
+---
+# Only the main import is directly imported so we can
+# @import partials from _sass.
+---
+
+$brand-color:      #3b82f6;
+$text-color:       #1e293b;
+$background-color: #f8fafc;
+$grey-color:       #64748b;
+$base-font-size:   17px;
+$base-line-height: 1.7;
+$content-width:    860px;
+
+@import "minima";
+@import "custom";
